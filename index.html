@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="./styles.css">
-        <title>Game Play's</title>
-    </head>
-    <body>
-        <h1>Encuentra Su Par</h1>
 
-        <!--JS-->
-        <script src="./index.js"></script>
-    </body>
+<head>
+    <meta name="viewport" content="width=device-">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navImg">
+            <!--IMG-->
+            <img src="assets/img/mente.jpg" alt="Brain IMG">
+        </div>
+        <div class="navText">
+            <h2>Juego de Memoria</h2>
+        </div>
+    </nav>
+
+    <main>
+        <div class="mainLogin">
+            <form action="">
+                <h3>Inicio de Sesión</h3>
+                <hr>
+                <div class="input">
+                    <img src="assets/img/user.png" alt="Usuario">
+                    <input class="text" type="text" placeholder="Usuarios">
+                </div>
+                <div class="input">
+                    <img src="assets/img/padlock.png" alt="Password">
+                    <input class="text" type="password" placeholder="Contraseña">
+                </div>
+                <div class="btnContenedor">
+                    <input id="Ingresar" class="btn" type="button" value="Ingresar">
+                    <a href="routes/select.html">R</a>
+                    <input id="Registrar" class="btn" type="button" value="Registrar">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerImg">
+            <!--IMG SENA-->
+            <img src="assets/img/logo-sena.png" alt="Logo Sena">
+        </div>
+        <div class="footerContext">
+            <!--Nombres, ficha-->
+            <p>
+                Alex Esteban Rosero Gualguan <br>
+                Danna Sofía Calderón Alegre <br>
+                Juan Angel Perez Ochoa <br>
+                <span style="text-decoration-line:line-through;">Julián Andrés Montoya Berrio</span> <br>
+            </p>
+        </div>
+    </footer>
+
+    <!--JS-->
+    <script src="./index.js"></script>
+</body>
+
 </html>
