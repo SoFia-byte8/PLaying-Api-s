@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-">
+    <meta name="viewport">
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Login</title>
@@ -19,21 +19,24 @@
     </nav>
 
     <main>
+<div id="test">
+
+</div>
+
         <div class="mainLogin">
             <form action="">
                 <h3>Inicio de Sesión</h3>
                 <hr>
                 <div class="input">
                     <img src="assets/img/user.png" alt="Usuario">
-                    <input class="text" type="text" placeholder="Usuarios">
+                    <input id="User" class="text" type="text" placeholder="Usuarios">
                 </div>
                 <div class="input">
                     <img src="assets/img/padlock.png" alt="Password">
-                    <input class="text" type="password" placeholder="Contraseña">
+                    <input id="Password" class="text" type="password" placeholder="Contraseña">
                 </div>
                 <div class="btnContenedor">
-                    <input id="Ingresar" class="btn" type="button" value="Ingresar">
-                    <a href="routes/select.html">R</a>
+                    <input id="Ingresar"  class="btn" type="button" onclick="location.href='routes/select.html' " value="Ingresar">
                     <input id="Registrar" class="btn" type="button" value="Registrar">
                 </div>
             </form>
@@ -57,6 +60,6 @@
     </footer>
 
     <!--JS-->
-    <script src="./index.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 </html>
