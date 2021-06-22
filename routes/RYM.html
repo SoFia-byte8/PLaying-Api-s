@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/img/pointer.ico" type="image/x-icon">
-    <title>Selección</title>
+    <title>Rick Y Morty</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/cards.css">
 </head>
-
 <body class="d-f-c">
     <nav class="brd d-f-r jc-c">
-        <div class="navText">
-            <h2>Selecciona, por favor</h2>
+        <div>
+            <h2>Encuentra los pares</h2>
         </div>
         <div class="navImg2">
             <!--IMG-->
@@ -21,17 +19,28 @@
         </div>
     </nav>
 
-    <main class="brd">
-        <div class="mainContenedor">    <!--POKEMON-->
-            <div class="mainSelect" onclick="location.href='Pokemon.html' ">
-                <img src="../assets/img/pokemon.jpg" href="">
-            </div>
-            <div class="mainSelect" onclick="location.href='RYM.html' ">    <!--RICK AND MORTY-->
-                <img src="../assets/img/RickYmorty.png">
-            </div>
+    <main class="brd d-f-r" style="height: 400px;">
+        <div class="pokemon-container">
+            
         </div>
-    </main>
-
+        <div class="container-points brd d-f-c">
+          <h3>Suerte</h3>
+          <h3>Nombre-Judador</h3>
+          <label>Puntos: </label>
+          <input class="text" type="number" placeholder="Puntos:">
+          
+          <label >Tiempo: </label>
+          <input class="text" type="text" placeholder="Tiempo">
+          
+          <h4>Parejas</h4>
+          <label>Encontradas: </label>
+          <input class="text" type="number" placeholder="Encontro">
+          
+          <label>Faltantes: </label>
+          <input class="text" type="number" placeholder="Faltante">
+      </div>       
+      <script src="../assets/js/pokeAPI.js"></script>
+</main>
 
 
     <footer class="brd d-f-r jc-c">
@@ -49,6 +58,6 @@
             </p>
         </div>
     </footer>
-</body>
 
+</body>
 </html>

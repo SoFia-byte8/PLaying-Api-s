@@ -1,6 +1,6 @@
 const pokemonContainer = document.querySelector(".pokemon-container");//Llamado y Conexion del Div en html y Js
 
-let limit = 8;
+let limit = 7;
 let offset = 1;
 
 //Conexion con la Api
@@ -9,7 +9,7 @@ function fetchPokemon(id) {
     .then((res) => res.json())
     .then((data) => {
       pokemonCarta(data);
-      spinner.style.display = "none";
+      //spinner.style.display = "none";
     });
 }
 
@@ -49,8 +49,8 @@ function pokemonCarta(pokemon) {
   name.textContent = pokemon.name;
 
   card.appendChild(spriteContainer);
-  card.appendChild(number);
-  card.appendChild(name);
+  //card.appendChild(number);
+  //card.appendChild(name);
 
   const cardBack = document.createElement("div");
   cardBack.classList.add("pokemon-block-back");
@@ -70,13 +70,13 @@ function progressBars(stats) {
   for (let i = 0; i < 3; i++) {
     
     const stat = stats[i];
-
     
   }
 
   return statsContainer;
 }
 //Call
+fetchPokemons(offset, limit);
 fetchPokemons(offset, limit);
 
 

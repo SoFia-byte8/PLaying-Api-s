@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-">
+    <meta name="viewport">
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Login</title>
+    <link rel="shortcut icon" href="assets/img/brain.ico" type="image/x-icon">
 </head>
 
-<body>
-    <nav>
-        <div class="navImg">
-            <!--IMG-->
+<body class="d-f-c">
+    <nav class="brd d-f-r jc-c">
+        <div class="img-w100"><!--IMG-->
             <img src="assets/img/mente.jpg" alt="Brain IMG">
         </div>
-        <div class="navText">
+        <div>
             <h2>Juego de Memoria</h2>
         </div>
     </nav>
 
-    <main>
-        <div class="mainLogin">
-            <form action="">
+    <main class="brd">
+        <div id="test">
+
+        </div>
+
+        <div class="mainLogin brd">
+            <form>
                 <h3>Inicio de Sesión</h3>
                 <hr>
-                <div class="input">
-                    <img src="assets/img/user.png" alt="Usuario">
-                    <input class="text" type="text" placeholder="Usuarios">
+                <div class="input jf-c">
+                    <img class="img-icon" src="assets/img/user.png" alt="Usuario">
+                    <input id="User" class="text " type="text" placeholder="Usuarios">
                 </div>
-                <div class="input">
-                    <img src="assets/img/padlock.png" alt="Password">
-                    <input class="text" type="password" placeholder="Contraseña">
+                <div class="input jc-c">
+                    <img class="img-icon" src="assets/img/padlock.png" alt="Password">
+                    <input id="Password" class="text " type="password" placeholder="Contraseña">
                 </div>
-                <div class="btnContenedor">
-                    <input id="Ingresar" class="btn" type="button" value="Ingresar">
-                    <a href="routes/select.html">R</a>
+
+                <div class="btnContenedor d-f-r jc-c">
+                    <input id="Ingresar" class="btn" type="button" onclick="location.href='routes/select.html' "
+                        value="Ingresar">
                     <input id="Registrar" class="btn" type="button" value="Registrar">
                 </div>
             </form>
         </div>
     </main>
 
-    <footer>
-        <div class="footerImg">
+    <footer class="brd d-f-r jc-c">
+        <div class="img-w100">
             <!--IMG SENA-->
             <img src="assets/img/logo-sena.png" alt="Logo Sena">
         </div>
-        <div class="footerContext">
+        <div>
             <!--Nombres, ficha-->
             <p>
                 Alex Esteban Rosero Gualguan <br>
@@ -57,6 +63,7 @@
     </footer>
 
     <!--JS-->
-    <script src="./index.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
+
 </html>
