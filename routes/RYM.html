@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick Y Morty</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/cards.css">
 </head>
-<body>
-
-    <nav>
-        <div class="navText">
+<body class="d-f-c">
+    <nav class="brd d-f-r jc-c">
+        <div>
             <h2>Encuentra los pares</h2>
         </div>
         <div class="navImg2">
@@ -19,13 +19,32 @@
         </div>
     </nav>
 
-    <main>
+    <main class="brd d-f-r" style="height: 400px;">
+        <div class="pokemon-container">
+            
+        </div>
+        <div class="container-points brd d-f-c">
+          <h3>Suerte</h3>
+          <h3>Nombre-Judador</h3>
+          <label>Puntos: </label>
+          <input class="text" type="number" placeholder="Puntos:">
+          
+          <label >Tiempo: </label>
+          <input class="text" type="text" placeholder="Tiempo">
+          
+          <h4>Parejas</h4>
+          <label>Encontradas: </label>
+          <input class="text" type="number" placeholder="Encontro">
+          
+          <label>Faltantes: </label>
+          <input class="text" type="number" placeholder="Faltante">
+      </div>       
+      <script src="../assets/js/pokeAPI.js"></script>
+</main>
 
-    </main>
 
-
-    <footer>
-        <div class="footerImg">     
+    <footer class="brd d-f-r jc-c">
+        <div class="img-w100">     
             <!--IMG SENA-->
             <img src="../assets/img/logo-sena.png" alt="Logo Sena">
         </div>

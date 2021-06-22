@@ -1,110 +1,96 @@
 * {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
-body {
-    background-color: rgb(207, 205, 205);
+.brd{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 100px;
+    opacity: 0.7;/* 1 = normal ; 0.5 = 50% : 0.1 = 90%*/
+}
+
+.d-f-c{
     display: flex;
     flex-flow: column wrap;
 }
 
-nav,
-main,
-footer {
-    border: 1px solid grey;
-    border-radius: 10px;
-    opacity: 0.5;
-    padding: 10px;
-    margin: 10px 100px;
-    /*  top, left, bottom, right*/
-}
-
-nav {
-    height: auto;
+.d-f-r{
     display: flex;
     flex-flow: row wrap;
+}
+
+.jc-c{
     justify-content: center;
     align-items: center;
 }
 
+body {
+    background-color: rgb(207, 205, 205);
+}
+
+nav {
+    height: auto;
+}
+
 main {
-    height: 300px;
+    height: 330px;
 }
 
 footer {
     height: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
 }
 
-.navImg img,
-.footerImg img {
+hr{
+    width: 80%;
+}
+
+.img-w100 img {     /*Img de nav y footer en Index*/
     width: 100px;
     border-radius: 10px;
     margin-right: 20px;
 }
 
-/*  Select*/
-.navImg2 img{
-    width: 60px;
-    border-radius: 10px;
-    margin-left: 20px;
-}
-
-
-
-.mainLogin{
+.mainLogin{     /*  Login / Index*/
     margin: auto;
-    border: 1px solid grey;
-    border-radius: 10px;
+    height: auto;
     width: 50%;
     padding: 8px;
     margin-top: 5%;
-    height: auto;
 }
 
-.mainLogin form{
-    flex-flow: column wrap;
-}
-
-.mainLogin form .text{
-    width: 70%;
-    border:1px solid grey;
-    border-radius: 10px;
-    padding:4px;
-}
-
-.mainLogin form img{
+.img-icon{      /*  Icons*/
     width: 20px;
     height: 20px;
     margin-right: 2px;
 }
 
-.input{
+.input{         /*  Container with icon and input / Login */
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     margin-bottom: 7px;
-    align-items: center;
 }
 
-
-.btnContenedor{
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    justify-content: center;
-}
-
-.btn{
-    width: 80px;
+.text{          /*  input text*/
+    width: 50%;
     border:1px solid grey;
     border-radius: 10px;
     padding:4px;
-    margin:10px 10px;/*  top, left, bottom, right*/
+}
+
+.btnContenedor{     /*Container with buttons*/
+    width: 100%;
+}
+
+
+.btn{               /*  Buttons*/
+    width: 80px;    
+    border:1px solid grey;
+    border-radius: 10px;
+    padding:4px;
+    margin:3px 10px;/*  top, left, bottom, right*/
 }
 
 .btn:hover{
@@ -114,7 +100,16 @@ footer {
 }
 
 
-/*  SELECT*/
+
+
+
+/*  Select*/
+.navImg2 img{   /*  Img in right / Select*/
+    width: 60px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
 .mainContenedor{
     display: flex;
     flex-flow: row wrap;
@@ -128,7 +123,7 @@ footer {
     border: 1px solid grey;
     border-radius: 10px;
     width: 25%;
-    height: 95%;
+    height: 100%;
     margin: 0px 1%;
 }
 .mainSelect img{
@@ -136,6 +131,31 @@ footer {
     width: 100%;
     height: 100%;
     cursor: pointer;
+}
+
+
+/*  POKEMON GAME*/
+
+.container-points{
+    height: auto;
+    width: 20%;
+    margin: 0%;
+    margin-left: 10%;
+}
+
+.container-points input{
+    margin-bottom: 5%;
+}
+
+
+/*  MESSAGE OF START*/
+
+#containerStart input{
+    border:transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    width: 500%;
+    background-color: transparent;
 }
 
 
