@@ -8,9 +8,13 @@
     <link rel="shortcut icon" href="../assets/img/pointer.ico" type="image/x-icon">
     <title>Selección</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+
+    <script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body class="d-f-c">
+
+
     <nav class="brd d-f-r jc-c">
         <div class="navText">
             <h2>Selecciona, por favor</h2>
@@ -19,7 +23,13 @@
             <!--IMG-->
             <img src="../assets/img/smile.png" alt="Carita feliz">
         </div>
+
     </nav>
+    
+    <div id="sesion">
+        <h3>Bienvenido: <span id="usuario">     
+    </div>
+    <a id='cerrar-secion'><input style="width: 100px;" class="btn" type="submit" name="entrar" value="Cerrar Sesion"></a>
 
     <main class="brd">
         <div class="mainContenedor">    <!--POKEMON-->
@@ -29,6 +39,17 @@
             <div class="mainSelect" onclick="location.href='RYM.html' ">    <!--RICK AND MORTY-->
                 <img src="../assets/img/RickYmorty.png">
             </div>
+            <script>
+                //colocar los valores dentro del html
+                $('#sesion #usuario').text(localStorage.usuario);
+                $('#sesion #password').text(localStorage.password);
+        
+                //Cerrar sesion 
+                $('#cerrar-secion').click(function(){
+                    localStorage.clear();
+                    window.location = "../index.html";
+                });
+            </script>
         </div>
     </main>
 

@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Login</title>
     <link rel="shortcut icon" href="assets/img/brain.ico" type="image/x-icon">
+
+
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/localstorage.js"></script>
 </head>
 
 <body class="d-f-c">
@@ -20,29 +25,29 @@
     </nav>
 
     <main class="brd">
-        <div id="test">
+        <div id="test"> 
 
         </div>
 
         <div class="mainLogin brd">
-            <form>
+            <form method="POST" id="box-form">
                 <h3>Inicio de Sesión</h3>
                 <hr>
                 <div class="input jf-c">
                     <img class="img-icon" src="assets/img/user.png" alt="Usuario">
-                    <input id="User" class="text " type="text" placeholder="Usuarios">
+                    <input name="user" id="txt-user" class="text " type="text" placeholder="Usuarios" required>
                 </div>
                 <div class="input jc-c">
                     <img class="img-icon" src="assets/img/padlock.png" alt="Password">
-                    <input id="Password" class="text " type="password" placeholder="Contraseña">
+                    <input name="password" id="txt-password" class="text " type="password" placeholder="Contraseña">
                 </div>
 
                 <div class="btnContenedor d-f-r jc-c">
-                    <input id="Ingresar" class="btn" type="button" onclick="location.href='routes/select.html' "
-                        value="Ingresar">
+                    <input name="entrar" class="btn" type="submit" value="Ingresar"> <!--onclick="location.href='routes/select.html' "-->
                     <input id="Registrar" class="btn" type="button" value="Registrar">
                 </div>
             </form>
+
         </div>
     </main>
 
@@ -63,7 +68,7 @@
     </footer>
 
     <!--JS-->
-    <script src="assets/js/login.js"></script>
+
 </body>
 
 </html>

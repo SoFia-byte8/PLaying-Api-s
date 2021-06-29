@@ -8,9 +8,18 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/cards.css">
 
+    <script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+
 </head>
 <body class="d-f-c">
+
+
+
     <nav class="brd d-f-r jc-c">
+        <div>
+            <a href="./select.html"><img style="margin-right: 20px;" width="30px" src="..//assets/img/Arrow.png" alt=""></a>
+        </div>
+
         <div>
             <h2>Encuentra los pares</h2>
         </div>
@@ -23,7 +32,6 @@
     
     <main class="brd d-f-r" style="height: 400px;">
 
-        
               <div class="pokemon-container">
 
                 <div id ="containerStart"><!--MESSAGE OF START-->
@@ -32,9 +40,10 @@
             
               </div>
               
-              <div class="container-points brd">
+              <div class="container-points brd" id="sesion">
                 <h3>Suerte</h3>
-                <h3>Nombre-Judador</h3>
+                <h3><span id="usuario"> </h3>
+                    <a id='cerrar-secion'><input style="width: 80%;" class="btn" type="submit" name="entrar" value="Cerrar Sesion"></a>
                 <label>Puntos: </label>
                 <input class="text" type="number" placeholder="Puntos:">
                 
@@ -68,6 +77,18 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        //colocar los valores dentro del html
+        $('#sesion #usuario').text(localStorage.usuario);
+        $('#sesion #password').text(localStorage.password);
+
+        //Cerrar sesion 
+        $('#cerrar-secion').click(function(){
+            localStorage.clear();
+            window.location = "../index.html";
+        });
+    </script>
     
 </body>
 </html>
