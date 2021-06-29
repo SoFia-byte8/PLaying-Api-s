@@ -35,10 +35,6 @@
     backface-visibility: hidden;
   }  
 
-  .img-container {
-    background-image: url("./blob.svg");
-  }   
-
   .img-container img{
         width: 80px;
         align-items: center;
